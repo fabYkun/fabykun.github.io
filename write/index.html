@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>Writing and managing content in Ghost, an advanced guide</title>
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="/assets/built/screen.css?v=c242bae858" />
+
+    <link rel="canonical" href="https://fabykun.github.io/write/" />
+    <meta name="referrer" content="no-referrer-when-downgrade" />
+    <link rel="amphtml" href="https://fabykun.github.io/write/amp/" />
+    
+    <meta property="og:site_name" content="Fabien BOREL - Portfolio" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Writing and managing content in Ghost, an advanced guide" />
+    <meta property="og:description" content="A full overview of all the features built into the Ghost editor, including powerful workflow automations to speed up your creative process." />
+    <meta property="og:url" content="https://fabykun.github.io/write/" />
+    <meta property="og:image" content="https://static.ghost.org/v4.0.0/images/writing-posts-with-ghost.png" />
+    <meta property="article:published_time" content="2021-09-26T21:08:02.000Z" />
+    <meta property="article:modified_time" content="2021-09-26T21:08:03.000Z" />
+    <meta property="article:tag" content="Getting Started" />
+    
+    <meta property="article:author" content="https://www.facebook.com/ghost" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Writing and managing content in Ghost, an advanced guide" />
+    <meta name="twitter:description" content="A full overview of all the features built into the Ghost editor, including powerful workflow automations to speed up your creative process." />
+    <meta name="twitter:url" content="https://fabykun.github.io/write/" />
+    <meta name="twitter:image" content="https://static.ghost.org/v4.0.0/images/writing-posts-with-ghost.png" />
+    <meta name="twitter:label1" content="Written by" />
+    <meta name="twitter:data1" content="Ghost" />
+    <meta name="twitter:label2" content="Filed under" />
+    <meta name="twitter:data2" content="Getting Started" />
+    <meta name="twitter:creator" content="ghost" />
+    <meta property="og:image:width" content="2000" />
+    <meta property="og:image:height" content="1216" />
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Fabien BOREL - Portfolio",
+        "url": "https://fabykun.github.io/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://fabykun.github.io/favicon.ico",
+            "width": 48,
+            "height": 48
+        }
+    },
+    "author": {
+        "@type": "Person",
+        "name": "Ghost",
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://static.ghost.org/v4.0.0/images/ghost-user.png",
+            "width": 400,
+            "height": 400
+        },
+        "url": "https://fabykun.github.io/author/ghost/",
+        "sameAs": [
+            "https://ghost.org",
+            "https://www.facebook.com/ghost",
+            "https://twitter.com/ghost"
+        ]
+    },
+    "headline": "Writing and managing content in Ghost, an advanced guide",
+    "url": "https://fabykun.github.io/write/",
+    "datePublished": "2021-09-26T21:08:02.000Z",
+    "dateModified": "2021-09-26T21:08:03.000Z",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://static.ghost.org/v4.0.0/images/writing-posts-with-ghost.png",
+        "width": 2000,
+        "height": 1216
+    },
+    "keywords": "Getting Started",
+    "description": "A full overview of all the features built into the Ghost editor, including powerful workflow automations to speed up your creative process.",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://fabykun.github.io/"
+    }
+}
+    </script>
+
+    <meta name="generator" content="Ghost 4.16" />
+    <link rel="alternate" type="application/rss+xml" title="Fabien BOREL - Portfolio" href="https://fabykun.github.io/rss/" />
+    <script defer src="https://unpkg.com/@tryghost/portal@~1.10.0/umd/portal.min.js" data-ghost="https://fabykun.github.io/" crossorigin="anonymous"></script><style id="gh-members-styles">.gh-post-upgrade-cta-content,
+.gh-post-upgrade-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    width: 100%;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.gh-post-upgrade-cta-content {
+    border-radius: 8px;
+    padding: 40px 4vw;
+}
+
+.gh-post-upgrade-cta h2 {
+    color: #ffffff;
+    font-size: 28px;
+    letter-spacing: -0.2px;
+    margin: 0;
+    padding: 0;
+}
+
+.gh-post-upgrade-cta p {
+    margin: 20px 0 0;
+    padding: 0;
+}
+
+.gh-post-upgrade-cta small {
+    font-size: 16px;
+    letter-spacing: -0.2px;
+}
+
+.gh-post-upgrade-cta a {
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: 500;
+    box-shadow: none;
+    text-decoration: underline;
+}
+
+.gh-post-upgrade-cta a:hover {
+    color: #ffffff;
+    opacity: 0.8;
+    box-shadow: none;
+    text-decoration: underline;
+}
+
+.gh-post-upgrade-cta a.gh-btn {
+    display: block;
+    background: #ffffff;
+    text-decoration: none;
+    margin: 28px 0 0;
+    padding: 8px 18px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.gh-post-upgrade-cta a.gh-btn:hover {
+    opacity: 0.92;
+}</style><style>:root {--ghost-accent-color: #FF1A75;}</style>
+
+</head>
+<body class="post-template tag-getting-started">
+
+    <div class="site-wrapper">
+
+        <header class="site-head">
+            <div class="site-head-container">
+                <a class="nav-burger" href="#">
+                    <div class="hamburger hamburger--collapse" aria-label="Menu" role="button" aria-controls="navigation">
+                        <div class="hamburger-box">
+                            <div class="hamburger-inner"></div>
+                        </div>
+                    </div>
+                </a>
+                <nav id="swup" class="site-head-left">
+                    <ul class="nav">
+    <li class="nav-home"><a href="https://fabykun.github.io/">Home</a></li>
+    <li class="nav-about"><a href="https://fabykun.github.io/about/">About</a></li>
+    <li class="nav-cv-french-resume"><a href="https://drive.google.com/file/d/1rv8_j_20VF0zmZfFY-GqUpky8fwnmH0s/view?usp=sharing">CV (french resume)</a></li>
+    <li class="nav-resume"><a href="https://drive.google.com/file/d/1S5U2KigjTtH-rD7q-8MRMRMqn18yvK5Y/view?usp=sharing">Resume</a></li>
+</ul>
+
+                </nav>
+                <div class="site-head-center">
+                    <a class="site-head-logo" href="https://fabykun.github.io">Fabien BOREL - Portfolio</a>
+                </div>
+                <div class="site-head-right">
+                    <div class="social-links">
+                        <a href="https://feedly.com/i/subscription/feed/https://fabykun.github.io/rss/" title="RSS" target="_blank" rel="noopener">RSS</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main id="site-main" class="site-main">
+            <div id="swup" class="transition-fade">
+
+            
+<article class="post-content post tag-getting-started ">
+
+    <header class="post-content-header">
+        <h1 class="post-content-title">Writing and managing content in Ghost, an advanced guide</h1>
+    </header>
+
+        <p class="post-content-excerpt">A full overview of all the features built into the Ghost editor, including powerful workflow automations to speed up your creative process.</p>
+
+    <figure class="post-content-image">
+        <img class="kg-image" src="https://static.ghost.org/v4.0.0/images/writing-posts-with-ghost.png" alt="Writing and managing content in Ghost, an advanced guide" />
+    </figure>
+
+    <div class="post-content-body">
+        <p>Ghost comes with a best-in-class editor which does its very best to get out of the way, and let you focus on your content. Don't let its minimal looks fool you, though, beneath the surface lies a powerful editing toolset designed to accommodate the extensive needs of modern creators.</p><p>For many, the base canvas of the Ghost editor will feel familiar. You can start writing as you would expect, highlight content to access the toolbar you would expect, and generally use all of the keyboard shortcuts you would expect.</p><p>Our main focus in building the Ghost editor is to try and make as many things that you hope/expect might work: actually work. </p><ul><li>You can copy and paste raw content from web pages, and Ghost will do its best to correctly preserve the formatting. </li><li>Pasting an image from your clipboard will upload inline.</li><li>Pasting a social media URL will automatically create an embed.</li><li>Highlight a word in the editor and paste a URL from your clipboard on top: Ghost will turn it into a link.</li><li>You can also paste (or write!) Markdown and Ghost will usually be able to auto-convert it into fully editable, formatted content.</li></ul><figure class="kg-card kg-image-card kg-width-wide kg-card-hascaption"><img src="https://static.ghost.org/v4.0.0/images/editor.png" class="kg-image" alt loading="lazy" width="3182" height="1500"><figcaption>The Ghost editor. Also available in dark-mode, for late night writing sessions.</figcaption></figure><p>The goal, as much as possible, is for things to work so that you don't have to <em>think</em> so much about the editor. You won't find any disastrous "block builders" here, where you have to open 6 submenus and choose from 18 different but identical alignment options. That's not what Ghost is about.</p><p>What you will find though, is dynamic cards which allow you to embed rich media into your posts and create beautifully laid out stories.</p><h2 id="using-cards">Using cards</h2><p>You can insert dynamic cards inside post content using the <code>+</code> button, which appears on new lines, or by typing <code>/</code> on a new line to trigger the card menu. Many of the choices are simple and intuitive, like bookmark cards, which allow you to create rich links with embedded structured data:</p><figure class="kg-card kg-bookmark-card"><a class="kg-bookmark-container" href="https://opensubscriptionplatforms.com/"><div class="kg-bookmark-content"><div class="kg-bookmark-title">Open Subscription Platforms</div><div class="kg-bookmark-description">A shared movement for independent subscription data.</div><div class="kg-bookmark-metadata"><img class="kg-bookmark-icon" src="https://opensubscriptionplatforms.com/images/favicon.png" alt=""><span class="kg-bookmark-author">Open Subscription Platforms</span></div></div><div class="kg-bookmark-thumbnail"><img src="https://opensubscriptionplatforms.com/images/osp-card.png" alt=""></div></a></figure><p>or embed cards which make it easy to insert content you want to share with your audience, from external services:</p><figure class="kg-card kg-embed-card"><iframe width="200" height="113" src="https://www.youtube.com/embed/hmH3XMlms8E?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></figure><p>But, dig a little deeper, and you'll also find more advanced cards, like one that only shows up in email newsletters (great for personalized introductions) and a comprehensive set of specialized cards for different types of images and galleries.</p><blockquote>Once you  start mixing text and image cards creatively, the whole narrative of the story changes. Suddenly, you're working in a new format.</blockquote><figure class="kg-card kg-image-card kg-width-full"><img src="https://static.ghost.org/v4.0.0/images/andreas-selter-xSMqGH7gi6o-unsplash.jpg" class="kg-image" alt loading="lazy" width="6000" height="4000"></figure><p>As it turns out, sometimes pictures and a thousand words go together really well. Telling people a great story often has much more impact if they can feel, even for a moment, as though they were right there with you.</p><figure class="kg-card kg-gallery-card kg-width-wide"><div class="kg-gallery-container"><div class="kg-gallery-row"><div class="kg-gallery-image"><img src="https://static.ghost.org/v4.0.0/images/andreas-selter-e4yK8QQlZa0-unsplash.jpg" width="4572" height="3048" loading="lazy" alt></div><div class="kg-gallery-image"><img src="https://static.ghost.org/v4.0.0/images/steve-carter-Ixp4YhCKZkI-unsplash.jpg" width="4032" height="2268" loading="lazy" alt></div></div></div></figure><figure class="kg-card kg-image-card kg-width-wide"><img src="https://static.ghost.org/v4.0.0/images/lukasz-szmigiel-jFCViYFYcus-unsplash.jpg" class="kg-image" alt loading="lazy" width="2560" height="1705"></figure><figure class="kg-card kg-gallery-card kg-width-wide kg-card-hascaption"><div class="kg-gallery-container"><div class="kg-gallery-row"><div class="kg-gallery-image"><img src="https://static.ghost.org/v4.0.0/images/jd-mason-hPiEFq6-Eto-unsplash.jpg" width="5184" height="3888" loading="lazy" alt></div><div class="kg-gallery-image"><img src="https://static.ghost.org/v4.0.0/images/jp-valery-OBpOP9GVH9U-unsplash.jpg" width="5472" height="3648" loading="lazy" alt></div></div></div><figcaption>Peaceful places</figcaption></figure><p>Galleries and image cards can be combined in so many different ways — the only limit is your imagination.</p><h2 id="build-workflows-with-snippets">Build workflows with snippets</h2><p>One of the most powerful features of the Ghost editor is the ability to create and re-use content snippets. If you've ever used an email client with a concept of <em>saved replies</em> then this will be immediately intuitive.</p><p>To create a snippet, select a piece of content in the editor that you'd like to re-use in future, then click on the snippet icon in the toolbar. Give your snippet a name, and you're all done. Now your snippet will be available from within the card menu, or you can search for it directly using the <code>/</code> command.</p><p>This works really well for saving images you might want to use often, like a company logo or team photo, links to resources you find yourself often linking to, or introductions and passages that you want to remember.</p><figure class="kg-card kg-image-card kg-width-wide"><img src="https://static.ghost.org/v4.0.0/images/createsnippet.png" class="kg-image" alt loading="lazy" width="2282" height="1272"></figure><p>You can even build entire post templates or outlines to create a quick, re-usable workflow for publishing over time. Or build custom design elements for your post with an HTML card, and use a snippet to insert it.</p><p>Once you get a few useful snippets set up, it's difficult to go back to the old way of diving through media libraries and trawling for that one thing you know you used somewhere that one time.</p><hr><h2 id="publishing-and-newsletters-the-easy-way">Publishing and newsletters the easy way</h2><p>When you're ready to publish, Ghost makes it as simple as possible to deliver your new post to all your existing members. Just hit the <em>Preview</em> link and you'll get a chance to see what your content looks like on Web, Mobile, Email and Social.</p><figure class="kg-card kg-image-card kg-width-wide"><img src="https://static.ghost.org/v4.0.0/images/preview.png" class="kg-image" alt loading="lazy" width="3166" height="2224"></figure><p>You can send yourself a test newsletter to make sure everything looks good in your email client, and then hit the <em>Publish</em> button to decide who to deliver it to.</p><p>Ghost comes with a streamlined, optimized email newsletter template that has settings built-in for you to customize the colors and typography. We've spent countless hours refining the template to make sure it works great across all email clients, and performs well for email deliverability.</p><p>So, you don't need to fight the awful process of building a custom email template from scratch. It's all done already!</p><hr><p>The Ghost editor is powerful enough to do whatever you want it to do. With a little exploration, you'll be up and running in no time.</p>
+    </div>
+
+
+    <footer class="post-content-footer">
+
+
+
+    </footer>
+
+
+</article>
+
+
+
+            </div>
+        </main>
+
+        <footer class="site-foot">
+            &copy; 2021 <a href="https://fabykun.github.io">Fabien BOREL - Portfolio</a> &mdash; Published with <a href="https://ghost.org" target="_blank" rel="noopener">Ghost</a>
+        </footer>
+
+    </div>
+
+
+    <script src="/assets/built/swup.js?v=c242bae858" data-swup-ignore-script></script>
+    <script src="/assets/built/infinitescroll.js?v=c242bae858" data-swup-ignore-script></script>
+    <script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous">
+    </script>
+
+    <div id="swup">
+        <script>
+    var images = document.querySelectorAll('.kg-gallery-image img');
+    images.forEach(function (image) {
+        var container = image.closest('.kg-gallery-image');
+        var width = image.attributes.width.value;
+        var height = image.attributes.height.value;
+        var ratio = width / height;
+        container.style.flex = ratio + ' 1 0%';
+    })
+</script>
+
+
+        
+    </div>
+
+    <script data-swup-ignore-script>
+        $(document).ready(function () {
+            // Mobile Menu Trigger
+            $('.nav-burger').click(function () {
+                $('body').toggleClass('site-head-open');
+            });
+        });
+
+        // Initiate Swup transitions
+        var swup = new Swup({
+            plugins: [new SwupHeadPlugin(), new SwupScriptsPlugin()],
+        });
+        document.addEventListener('swup:contentReplaced', event => {
+            window.scrollTo(0, 0);
+            initInfiniteScroll(window, document);
+            $('body').removeClass('site-head-open');
+        });
+    </script>
+
+</body>
+</html>
